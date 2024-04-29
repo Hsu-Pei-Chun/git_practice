@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <form id="myForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">姓名</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" name="name">
+                <div id="nameHelp" class="form-text">請輸入你的姓名</div>
+            </div>
+            <div class="mb-3">
+                <label for="nickName" class="form-label">綽號</label>
+                <input type="text" class="form-control" id="nickName" aria-describedby="nickNameHelp" name="nickName">
+                <div id="nickNameHelp" class="form-text">請輸入你的綽號</div>
+            </div>
+            <div class="mb-3">
+                <label for="born" class="form-label">出生年份</label>
+                <input type="text" class="form-control" id="born" aria-describedby="bornHelp" name="born">
+                <div id="bornHelp" class="form-text">請輸入你西元出生年分</div>
+            </div>
+            <button type="submit" class="btn btn-primary">送出</button>
+        </form>
+    </div>
+    <div class="container">
+        <p class="lead" id="message1"></p>
+        <p class="lead" id="message2"></p>
+    </div>
+
+</body>
+
+</html>
